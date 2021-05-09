@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Math Game: 10 seconds Challenge</title>
+    <!-- Latest compiled and minified CSS Bootstrap 3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 header py-4 text-center">
+          <h2> Math 10 Second Game </h2>
+          <h5> current score: <span id = "current-score"></span></h5>
+          <h5> high score: <span id = "high-score"></span></h5>
+        </div> 
+      </div> 
+      <div class = "row">
+        <div class = "col-12 body text-center mb-2">
+          <p> <span id = "seconds"></span> seconds left </p>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-12 text-center">
+          <h2 class = "number" id = "first-number"> 
+          <h5> + </h5>
+          <h2 class = "number mb-4" id = "second-number"> </h2>
+          <input type = "text" id = "userAnswer"> 
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
