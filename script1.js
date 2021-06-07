@@ -3,6 +3,7 @@ var timer = null;
 var score = 0;
 var start = false;
 var timeout;
+var globalScore = 0;
 
 $(document).ready(function () {
     
@@ -20,8 +21,11 @@ $(document).ready(function () {
     var updateScore = function(amount){
         score+= amount
 
-        $('#current-score').html(score)
-        $('#highestScore').html(score);
+        $('#current-score').html(score);
+        if (score > globalScore) {
+            globalScore = score;
+            $('#highestScore').html(score);
+        }
     }
 
     var checkCorrectAnswer = function(accurateAnswer){
