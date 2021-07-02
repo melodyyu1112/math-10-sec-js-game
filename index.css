@@ -1,8 +1,39 @@
+/*#cloud {
+    max-height: 500px;
+    width: auto;
+}*/
+
 h1 {
     padding-bottom: 10px;
+}
+
+.container {
+    padding: 50px;
 }
 
 h5 {
     font-size: small;
     text-align: right;
 }
+
+.img-wrap {
+    position: relative;
+}
+
+.img {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height:770px;
+}
+
+.container {
+    position: relative;
+    border-style: solid;
+    border-color: gray;
+}
+
+
